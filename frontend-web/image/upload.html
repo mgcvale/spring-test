@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Image</title>
+    <link rel="stylesheet" type="text/css" href="../style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Silkscreen&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="center-div">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+        </ul>
+        <br><hr>
+        <h1>Upload image</h1>
+        <form>
+            
+            <span class="login-warning">
+                <br>
+                <p>It seems that you are not logged in!<br></p><a href="../user/login.html"><u><small>Log-in</small></u></a>
+            </span>
+            <br><br>
+            
+            <label for="img-input">Image Upload</label><br><br>
+            <input type="file" name="img" id="img-input" accept="image/*">
+            <br><br><br>
+            <button type="none" id="submit-button">Upload</button>
+            <br><br>
+        </form>
+    </div>
+    <script src="../scripts/user/tokenManager.js" type="module"></script>
+    <script src="../scripts/upload.js" type="module"></script>    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Silkscreen&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="center-div">
+        <ul>
+            <li> <a href="../index.html">Home</a></li>
+        </ul>
+        
+        <br><hr>
+        <h1>Delete user</h1>
+
+        <form>
+            <label for="username">Username:</label><br>
+            <input type="text" name="user" id="username" required>
+
+            <span class="login-warning">
+                <br>
+                <p>It seems that you are not logged in!<br></p><a href="login.html"><u><small>Log-in</small></u></a>
+            </span>
+            <br><br>
+
+            <label for="delete_dirs">Delete directories:</label>
+            <input type="checkbox" name="deletedir" id="delete-2dirs" data-val="false">
+            <br><br>
+
+            <button type="submit" id="submit-button">Delete User</button>
+        </form>
+    </div>
+</body>
+<script src="../scripts/user/tokenManager.js" type="module"></script>
+<script src="../scripts/user/delete.js" type="module">
+</script>  
+</html>
